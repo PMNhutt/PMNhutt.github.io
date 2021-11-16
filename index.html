@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/css/img/gundam.png" />
+  <title>Phan Minh Nhut Resume</title>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <div class="warpper container">
+
+    <!-- nav button -->
+    <div class="fixed-top mt-5">
+      <button title="Menu Navigation" class="btn btn-transparent" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+          class="bi bi-list fs-3 text-white"></i></button>
+    </div>
+
+    <!-- Home -->
+    <div id="home" class="cover-container d-flex align-items-center justify-content-center">
+      <div class="text-center font-monospace">
+        <h1 title="I'm Phan Minh Nhut" class="text-uppercase text-white mx-auto my-auto fw-normal mb-1">I'm Phan Minh
+          Nhut</h1>
+        <div class='text-white mx-auto my-auto fw-lighter fs-2'><span id='text'></span>
+          <div class='console-underscore' id='console'>&#95;</div>
+        </div>
+
+        <a href="https://github.com/PMNhutt"><i class="bi bi-github text-white my-3 fs-3"></i></a>
+        <div id="mouse-bounce" class="mouse-bounce"><a href="#about"><i
+          class="bi bi-mouse2-fill text-white my-3 fs-4"></i></a></div>
+
+      </div>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="">
+      <div class="container-lg my3 mb-4 text-center">
+        <h2 class="text-light fw-light text-uppercase">About Me</h2>
+        <p class="text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, accusantium
+          necessitatibus dolore, dolor
+          harum sequi vitae magnam praesentium, illo voluptate possimus ipsum temporibus aspernatur eveniet. Officiis
+          molestias excepturi alias hic.</p>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills">
+      <div class="container-lg my3 text-center">
+        <h2 class="text-light fw-light text-uppercase">Skills</h2>
+        <p class="text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, accusantium
+          necessitatibus dolore, dolor
+          harum sequi vitae magnam praesentium, illo voluptate possimus ipsum temporibus aspernatur eveniet. Officiis
+          molestias excepturi alias hic.</p>
+      </div>
+    </div>
+
+    <!-- Experiences -->
+    <div id="experiences">
+      <div class="container-lg my3 text-center">
+        <h2 class="text-light fw-light text-uppercase">Experiences</h2>
+        <p class="text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, accusantium
+          necessitatibus dolore, dolor
+          harum sequi vitae magnam praesentium, illo voluptate possimus ipsum temporibus aspernatur eveniet. Officiis
+          molestias excepturi alias hic.</p>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div id="education">
+      <div class="container-lg my3 text-center">
+        <h2 class="text-light fw-light text-uppercase">Education</h2>
+        <p class="text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, accusantium
+          necessitatibus dolore, dolor
+          harum sequi vitae magnam praesentium, illo voluptate possimus ipsum temporibus aspernatur eveniet. Officiis
+          molestias excepturi alias hic.</p>
+      </div>
+    </div>
+
+
+    <!-- Script -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/particles.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
+
+    <!-- End Script -->
+
+    <!-- Off Canvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <img class="offcan-img img-fluid" src="./assets/css/img/gundam.png" alt="Icon"> 
+        <h5 id="offcanvasRightLabel">NhutPM</h5>
+        
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body text-light">
+        <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiences">EXPERIENCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">EDUCATION</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

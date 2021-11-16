@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    cursor: url('./img/spacrecraft.png'), auto;
+}
+
+a,.btn:hover, i, button,
+.btn-close.text-reset{
+    cursor: url('./img/spacrecraft-pointer.png'), auto;
+}
+
+
+.warpper{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* z-index: 100; */
+}
+
+
+#particles-js canvas {
+    display: block;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;  
+    top: 0;
+    left: 0;
+    background-image: url('https://cdn.pixabay.com/photo/2016/08/03/09/03/universe-1566159_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+#header a,
+#header ul li
+{
+    color: #fff;
+}
+
+.banner{
+    background: url('https://cdn.pixabay.com/photo/2017/11/27/21/31/computer-2982270_960_720.jpg');
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+}
+
+.cover-container{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.cover-container h1{
+    font-size: 4rem;
+}
+
+h2.text-light.fw-light.text-uppercase{
+    letter-spacing: 3px;
+}
+
+.btn.btn-transparent{
+    border: #ecf0f1 3px solid;
+}
+
+.mouse-bounce{
+   top: 12rem;
+   position: relative;
+   z-index: 99;
+   transition: 0.5s;
+   animation: mouse-anim 1s ease-out 0s infinite;
+}
+
+#mouse-bounce a{
+    top: 12rem;
+    height: 40px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    /* text-align: center; */
+    left: 50%;
+}
+
+@keyframes mouse-anim{
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 10px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.offcan-img{
+  width: 50px;
+}
+
+/* typing text effect */
+.hidden {
+    opacity:0;
+  }
+  .console-container {
+   
+    font-size:4em;
+    text-align:center;
+    height:200px;
+    width:600px;
+    display:block;
+    position:absolute;
+    color:white;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+  }
+  .console-underscore {
+     display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+  }
+
+  .offcanvas-start{
+    width: 215px;
+    background-color: #0984e3;
+    
+  }
+
+  .offcanvas-header{
+    border-bottom: 2px #2d3436 solid;
+  }
+
+  .offcanvas-body{
+    background-color:#74b9ff;
+  }
+
+  .offcanvas-body a{
+    color: #000;
+  }
+
+  .offcanvas-body ul li a::after{
+    content: '';
+    width: 20px;
+    background-color: #2d3436;
+    top: auto;
+    left: 0;
+    right: 0;
+    
+    position: absolute;
+    height: 1px;
+  }
+
+  /* glitch animation */
+@media (min-width: 770px) {
+    h1.text-uppercase.text-white.mx-auto.my-auto.fw-normal.mb-1{
+        animation: glitch 1s linear infinite;
+      }
+    
+      @keyframes glitch{
+        2%,64%{
+          transform: translate(2px,0) skew(0deg);
+        }
+        4%,60%{
+          transform: translate(-2px,0) skew(0deg);
+        }
+        62%{
+          transform: translate(0,0) skew(5deg); 
+        }
+      }
+    
+      h1.text-uppercase.text-white.mx-auto.my-auto.fw-normal.mb-1::before,
+      h1.text-uppercase.text-white.mx-auto.my-auto.fw-normal.mb-1::after{
+        content: attr(title);
+        position: absolute;
+        left: 0;
+      }
+    
+      h1.text-uppercase.text-white.mx-auto.my-auto.fw-normal.mb-1::before{
+        animation: glitchTop 1s linear infinite;
+        clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+      }
+    
+      @keyframes glitchTop{
+        2%,64%{
+          transform: translate(2px,-2px);
+        }
+        4%,60%{
+          transform: translate(-2px,2px);
+        }
+        62%{
+          transform: translate(13px,-1px) skew(-13deg); 
+        }
+      }
+    
+      h1.text-uppercase.text-white.mx-auto.my-auto.fw-normal.mb-1::after{
+        animation: glitchBotom 1.5s linear infinite;
+        clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+      }
+    
+      @keyframes glitchBotom{
+        2%,64%{
+          transform: translate(-2px,0);
+        }
+        4%,60%{
+          transform: translate(-2px,0);
+        }
+        62%{
+          transform: translate(-22px,5px) skew(21deg); 
+        }
+      }
+}
+
+  
+
+  
+
+
+
