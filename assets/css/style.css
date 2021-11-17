@@ -202,26 +202,44 @@ h2.text-light.fw-light.text-uppercase{
     font-size: 48px;
   }
 }
-  /* glitch animation */
+  
 @media (max-width: 770px) {
   h1.text-uppercase.text-white.mx-auto.my-auto.fw-normal.mb-1{
-    font-size: 30px;
+    font-size: 50px;
   }
   .text-white.mx-auto.my-auto.fw-lighter{
     font-size: 24px;
   }
 }
 
+@media (max-width: 520px) {
+  h1.text-uppercase.text-white.mx-auto.my-auto.fw-normal.mb-1{
+    font-size: 40px;
+  }
+  .text-white.mx-auto.my-auto.fw-lighter{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  h1.text-uppercase.text-white.mx-auto.my-auto.fw-normal.mb-1{
+    font-size: 30px;
+  }
+  .text-white.mx-auto.my-auto.fw-lighter{
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 320px) {
   h1.text-uppercase.text-white.mx-auto.my-auto.fw-normal.mb-1{
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .text-white.mx-auto.my-auto.fw-lighter{
     font-size: 19px;
   }
 }
-  
+  /* glitch animation */
     h1.text-uppercase.text-white.mx-auto.my-auto.fw-normal.mb-1{
         animation: glitch 1s linear infinite;
         
