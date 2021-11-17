@@ -1,7 +1,13 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box; 
+}
+
+/* highlight color */
+::selection{
+  background-color: #ecf0f1;
+  color: #2c3e50;
 }
 
 body {
@@ -135,36 +141,58 @@ h2.text-light.fw-light.text-uppercase{
 
   .offcanvas-start{
     width: 215px;
-    background-color: #0984e3;
+    background-color: #2980b9;
     
   }
 
   .offcanvas-header{
+    color: #ecf0f1;
     border-bottom: 2px #2d3436 solid;
+    letter-spacing: 1px;
+  }
+
+  .offcanvas-header h5{
+    margin-bottom: 0;
+  }
+
+  .offcanvas-backdrop.show{
+    opacity: 0.2;
   }
 
   .offcanvas-body{
-    background-color:#74b9ff;
+    background-color:#ecf0f1;
   }
 
   .offcanvas-body a{
+    letter-spacing: 1px;
     color: #000;
+    font-size: 18px;
   }
 
   .offcanvas-body ul li a::after{
     content: '';
-    width: 20px;
+    width: 100%;
     background-color: #2d3436;
     top: auto;
-    left: 0;
-    right: 0;
-    
-    position: absolute;
+    left: auto;
+    right: auto;
+    display: block;
+    position: relative;
     height: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
   }
+
+  .offcanvas-body ul li a:hover::after {
+    transform: scaleX(1);
+  }
+
+  
 
   /* glitch animation */
 @media (min-width: 770px) {
+  
     h1.text-uppercase.text-white.mx-auto.my-auto.fw-normal.mb-1{
         animation: glitch 1s linear infinite;
       }

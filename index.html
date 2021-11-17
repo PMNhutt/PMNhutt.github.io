@@ -35,7 +35,7 @@
 
         <a href="https://github.com/PMNhutt"><i class="bi bi-github text-white my-3 fs-3"></i></a>
         <div id="mouse-bounce" class="mouse-bounce"><a href="#about"><i
-          class="bi bi-mouse2-fill text-white my-3 fs-4"></i></a></div>
+              class="bi bi-mouse2-fill text-white my-3 fs-4"></i></a></div>
 
       </div>
     </div>
@@ -98,30 +98,36 @@
 
     <!-- End Script -->
 
+    <!-- icon ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <!-- Off Canvas -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
-        <img class="offcan-img img-fluid" src="./assets/css/img/gundam.png" alt="Icon"> 
-        <h5 id="offcanvasRightLabel">NhutPM</h5>
-        
+        <a href="#home" title="Navigate to home"><img class="offcan-img img-fluid" src="./assets/css/img/gundam.png" alt="Icon"></a>
+        <h5 id="offcanvasRightLabel">NHUTPM</h5>
+
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body text-light">
         <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+            <a class="nav-link fill" aria-current="page" href="#home"><i class="bi bi-house-fill"></i>  HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">ABOUT</a>
+            <a class="nav-link fill" href="#about"><i class="bi bi-person-fill"></i>  ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">SKILLS</a>
+            <a class="nav-link fill" href="#skills"><i class="bi bi-bar-chart-line-fill"></i>  SKILLS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#experiences">EXPERIENCES</a>
+            <a class="nav-link fill" href="#experiences"><i class="bi bi-book-fill"></i>  EXPERIENCES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#education">EDUCATION</a>
+            <a class="nav-link fill" href="#education">
+              <ion-icon name="school"></ion-icon>  EDUCATION
+            </a>
           </li>
         </ul>
       </div>
