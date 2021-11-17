@@ -51,21 +51,29 @@ function consoleText(words, id, colors) {
 }
 
 // scroll mouse
-var mybutton = document.getElementById("mouse-bounce");
+var iconWeb = document.getElementById("mouse-bounce");
+var iconPhone = document.getElementById("mouse-bounce-phone");
+
 
 // When the user scrolls down 200px from the top of the document, show the button
 window.onscroll = function () {
     scrollFunction()
 };
 
+
 function scrollFunction() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         //    mybutton.style.display = "block";
-        mybutton.style.opacity = "0";
-        mybutton.style.visibility = "hidden";
+        iconWeb.style.opacity = "0";
+        iconWeb.style.visibility = "hidden";
+        iconPhone.style.opacity = "0";
+        iconPhone.style.visibility = "hidden";
+
     } else {
         //     mybutton.style.display = "none";
-        mybutton.style.opacity = "1";
-        mybutton.style.visibility = "visible";
+        iconWeb.style.opacity = "1";
+        iconWeb.style.visibility = "visible";
+        iconPhone.style.opacity = "1";
+        iconPhone.style.visibility = "visible";
     }
 }

@@ -84,22 +84,64 @@ h2.text-light.fw-light.text-uppercase{
 }
 
 .mouse-bounce{
-   top: 12rem;
    position: relative;
    z-index: 99;
    transition: 0.5s;
    animation: mouse-anim 1s ease-out 0s infinite;
 }
 
-#mouse-bounce a{
-    top: 12rem;
+.mouse-bounce-phone{
+  position: relative;
+  z-index: 99;
+  transition: 0.5s;
+  animation: mouse-anim 1s ease-out 0s infinite;
+}
+
+/* change icon responsive */
+@media (min-width: 1280px){
+  .mouse-bounce a{
+    top: 10rem;
     height: 40px;
     width: 20px;
     display: block;
     position: absolute;
-    /* text-align: center; */
     left: 50%;
+    transform: translateX(-50%);
 }
+
+.mouse-bounce-phone{
+    top: 10rem;
+    height: 40px;
+    width: 20px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1280px){
+  .mouse-bounce-phone a{
+    top: 10rem;
+    height: 40px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mouse-bounce a{
+    top: 10rem;
+    height: 40px;
+    width: 20px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 
 @keyframes mouse-anim{
     0% {
@@ -112,6 +154,8 @@ h2.text-light.fw-light.text-uppercase{
         top: 0px;
     }
 }
+
+/* end icon changing */
 
 .offcan-img{
   width: 50px;
@@ -191,6 +235,9 @@ h2.text-light.fw-light.text-uppercase{
   .offcanvas-body ul li a:hover::after {
     transform: scaleX(1);
   }
+
+  
+  /* responsive */
 
   
 @media (min-width: 980px) {
