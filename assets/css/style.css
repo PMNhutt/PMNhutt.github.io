@@ -11,7 +11,7 @@
 }
 
 body {
-  overflow-y: hidden;
+  overflow: hidden;
   cursor: url('./img/spacrecraft.png'), auto;
 }
 
@@ -41,7 +41,8 @@ a,.btn:hover, i, button,
   left: 0;
   right: 0;
   z-index: 9999;
-  background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+  background: rgb(0,198,197);
+  background: radial-gradient(circle, rgba(0,198,197,1) 0%, rgba(41,99,136,1) 50%, rgba(7,68,96,1) 100%);
 }
 
 .icon-container .gundam{
@@ -68,7 +69,7 @@ a,.btn:hover, i, button,
 .icon-container .icon.gundam rect,
 .icon-container .icon.gundam circle{
   animation-name: animate;
-  animation-duration: 5s;  
+  animation-duration: 3s;  
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   transition: 0.8s;
