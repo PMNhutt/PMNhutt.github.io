@@ -77,3 +77,42 @@ function scrollFunction() {
         iconPhone.style.visibility = "visible";
     }
 }
+
+// audio
+var music = document.getElementById('audioplayer');
+var pButton = document.getElementById('pButton');
+pButton.addEventListener("click", play);
+
+// window.onload = function() {
+//     music.play();
+// }
+
+function play() {
+    // start music
+    if (music.paused) {
+        music.play();
+        // remove play, add pause
+        pButton.className = "";
+        pButton.className = "bi bi-volume-up-fill text-light";
+    } else { // pause music
+        music.pause();
+        // remove pause, add play
+        pButton.className = "";
+        pButton.className = "bi bi-volume-mute-fill text-light";
+    }
+}
+
+// icon loader
+var loader = document.getElementsByClassName("poli");
+for(var i = 0; i < loader.length; i++){
+  	loader[i].addEventListener("webkitAnimationEnd", myEndFunction);   
+  }
+
+function myEndFunction(){  
+  for(var i = 0; i < loader.length; i++){
+  	loader[i].classList.remove("poli");
+  }  
+};
+
+
+
