@@ -4,6 +4,24 @@
     box-sizing: border-box; 
 }
 
+/* custom scrollbar(except FireFox maybe) */
+::-webkit-scrollbar{
+  width: 1em;
+}
+
+::-webkit-scrollbar-track{
+  background: #2c3e50;
+  /* border-radius: 100vw; */
+  /* margin-block: .5em; */
+}
+
+::-webkit-scrollbar-thumb{
+  /* background: rgb(41,99,136); */
+  background: linear-gradient(0deg, rgba(41,99,136,1) 0%, rgba(0,198,197,1) 50%, rgba(41,99,136,1) 100%);
+  border: .26em solid #2c3e50;
+  border-radius: 100vw;
+}
+   
 /* highlight color */
 ::selection{
   background-color: #ecf0f1;
@@ -112,6 +130,8 @@ a,.btn:hover, i, button,
     background-size: cover;
 } 
 
+/* primary css */
+
 #header a,
 #header ul li
 {
@@ -145,6 +165,9 @@ h2.text-light.fw-light.text-uppercase{
 .btn.btn-transparent{
     border: #ecf0f1 3px solid;
 }
+
+
+/* end */
 
 /* audioplayer */
 .audioplayer{

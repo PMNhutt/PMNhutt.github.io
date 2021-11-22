@@ -68,7 +68,7 @@
   <div id="particles-js"></div>
 
 
-  <div class="warpper container">
+  <div class="warpper container-lg">
     <!-- audio player -->
     <audio id="audioplayer" loop="loop" preload="true">
       <source src="./assets/music/ghost duet.mp3" type="audio/mpeg">
@@ -98,7 +98,7 @@
           <div class='console-underscore' id='console'>&#95;</div>
         </div>
 
-        <a href="https://github.com/PMNhutt"><i class="bi bi-github text-white my-3 fs-3"></i></a>
+        <!-- <a href="https://github.com/PMNhutt"><i class="bi bi-github text-white my-3 fs-3"></i></a> -->
         <div id="mouse-bounce" class="mouse-bounce">
           <a href="#about">
             <i class="bi bi-mouse2-fill text-white my-3 fs-4 mouse-bounce"></i>
@@ -114,13 +114,76 @@
     </div>
 
     <!-- About -->
-    <div id="about" class="">
-      <div class="container-lg my3 mb-4 text-center">
-        <h2 class="text-light fw-light text-uppercase">About Me</h2>
-        <p class="text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, accusantium
-          necessitatibus dolore, dolor
-          harum sequi vitae magnam praesentium, illo voluptate possimus ipsum temporibus aspernatur eveniet. Officiis
-          molestias excepturi alias hic.</p>
+    <h2 class="text-dark fw-light text-uppercase bg-light text-center rounded p-3 mt-5">About Me</h2>
+    <div id="about" class="rounded">
+
+      <div class="container-lg my3 mb-4">
+
+        <div class="row justify-content-center g-3">
+          <div class="col-5 col-lg-4 col-xl-3">
+            <div class="card w-100">
+              <div class="card-body">
+                <img src="./assets/css/img/ava2.jpg" class="card-img" alt="My Profile Picture" title="This is my face">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-9 col-lg-4">
+            <div class="card">
+              <h4 class="card-header text-uppercase fw-light fs-5 text-center">summary</h4>
+              <div class="card-body">
+                <p class="card-text text-start">A funny, energetic and sociable person with <span
+                    class="fw-bold">graphic passionate</span> and more
+                  than <span class="fw-bold">1 year
+                    learning HTML, CSS and basic JavaScript</span>. I've seen lots of incredible websites and I love it,
+                  I've
+                  spent most of the time
+                  learning how to make all that gorgeous eﬀects. So I'm looking forward to doing an
+                  internship <span class="fw-bold">front-end developer</span> position and accomplish more experiences
+                  in the ﬁeld of
+                  software engineer.
+                </p>
+                <p class="card-text text-start">
+                  <!-- Despite my passion for graphics, I have a weakness that is a bit lacking in creativity, and to make up
+                  for that weakness I often do. -->
+                  I like to <span class="fst-italic">communicate and listen</span> to others, I think it's the best way
+                  to receive information
+                  and show respect to your partner. I also prefer <span class="fst-italic">working as a team</span>
+                  because I love sharing things and
+                  the productivity will much more faster. Beside I can ask for help if I have some troubles than just to
+                  suffer it alone.
+                </p>
+                <a href="./assets/Phan Minh Nhut-Software Engineer.pdf" class="btn btn-primary"><i
+                    class="bi bi-download me-1"></i>My CV</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-7 col-lg-4 col-xl-3">
+            <div class="card">
+              <h4 class="card-header text-uppercase fw-light fs-5 text-center">contact</h4>
+              <div class="card-body">
+                <p class="card-text text-start">
+                  <i class="bi bi-geo-alt-fill me-1"></i>Dong Hung Thuan Ward, District 12, Ho Chi Minh City.
+                </p>
+                <p class="card-text text-start">
+                  <i class="bi bi-calendar-fill me-0"></i> 11 Apirl, 2001
+                </p>
+                <p class="card-text text-start">
+                  <i class="bi bi-phone-fill me-2"></i>0968 797 104
+                </p>
+                <p class="card-text text-start">
+                  <i class="bi bi-envelope-fill me-2"></i>phanminhnhut.114@gmail.com
+                </p>
+                <p class="card-text text-start">
+                  <i class="bi bi-github me-2"></i><a href="https://github.com/PMNhutt"
+                    class="link-secondary">https://github.com/PMNhutt</a>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -218,9 +281,13 @@
     <script>
       $(window).on("load", function () {
         $(window).scrollTop(0);
+        // $('html').css({'scroll-behavior':'auto'});
+
         $(".icon-loader").fadeIn(2000).delay(4000).fadeOut("slow");
+
         setTimeout(function () {
           $('body').css({ 'overflow': 'auto' });
+          // $('html').css({'scroll-behavior':'smooth'});
         }, 4000);
       });
     </script>
