@@ -82,7 +82,7 @@
     <!-- nav button -->
     <div class="fixed-top mt-5">
       <span class='tt' data-bs-placement="top" title="Menu Navigation">
-        <button class="btn btn-light rounded-circle" type="button" data-bs-toggle="offcanvas"
+        <button class="btn btn-nav rounded-circle" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
             class="bi bi-list fs-3 text-black"></i></button>
       </span>
@@ -114,7 +114,7 @@
     </div>
 
     <!-- About -->
-    <h2 class="text-dark fw-light text-uppercase bg-light text-center rounded p-3 mt-5">About Me</h2>
+    <h2 class="text-dark fw-light text-uppercase bg-light text-center rounded p-3 mb-4">About Me</h2>
     <div id="about" class="rounded">
 
       <div class="container-lg my3 mb-4">
@@ -153,7 +153,26 @@
                   the productivity will much more faster. Beside I can ask for help if I have some troubles than just to
                   suffer it alone.
                 </p>
-                <a href="./assets/Phan Minh Nhut-Software Engineer.pdf" class="btn btn-primary"><i
+                <p class="card-text accordion accordion-flush" id="more-about">
+                <p class="accordion-item border-0">
+                <p class="accordion-header" id="more-header">
+                  <a class="btn accordion-button collapsed p-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#more-1" aria-controls="#more-1" aria-expanded="false">More about me</a>
+                </p>
+                <p id="more-1" class="accordion-collapse collapse" aria-labelledby="more-header"
+                  data-bs-parent="#more-about">
+                  <span class="fst-italic">
+                    Despite my passion for graphics, I have a weakness that is a bit lacking in creativity, and to make
+                    up
+                    for that weakness I often do....
+                  </span>
+
+                </p>
+
+                </p>
+
+                </p>
+                <a href="./assets/Phan Minh Nhut-Software Engineer.pdf" class="btn btn-grad"><i
                     class="bi bi-download me-1"></i>My CV</a>
               </div>
             </div>
@@ -188,9 +207,9 @@
     </div>
 
     <!-- Skills -->
+    <h2 class="text-dark fw-light text-uppercase bg-light text-center rounded p-3 mt-5 mb-4">Skills</h2>
     <div id="skills">
       <div class="container-lg my3 text-center">
-        <h2 class="text-light fw-light text-uppercase">Skills</h2>
         <p class="text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, accusantium
           necessitatibus dolore, dolor
           harum sequi vitae magnam praesentium, illo voluptate possimus ipsum temporibus aspernatur eveniet. Officiis
@@ -262,32 +281,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"></script>
-    <script>
-      // const tooltips = document.querySelectorAll('.tt');
-      // tooltips.forEach(t => {
-      //   new bootstrap.Tooltip(t);
-      // })
-      // var checkMedia = window.matchMedia("(min-width: 991px)");
-      // if (checkMedia.matches) {
-      //   for (var i = 0; i < tooltips.length; i++) {
-      //     console.log(i);
-      //     tooltips[i].classList.remove("tt");
-      //   }
+    <!-- <script>
+      const tooltips = document.querySelectorAll('.tt');
+      tooltips.forEach(t => {
+        new bootstrap.Tooltip(t);
+      })
+      var checkMedia = window.matchMedia("(min-width: 991px)");
+      if (checkMedia.matches) {
+        for (var i = 0; i < tooltips.length; i++) {
+          console.log(i);
+          tooltips[i].classList.remove("tt");
+        }
 
-      // }
-    </script>
+      }
+    </script> -->
     <!-- loading icon scren -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(window).on("load", function () {
         $(window).scrollTop(0);
-        // $('html').css({'scroll-behavior':'auto'});
-
         $(".icon-loader").fadeIn(2000).delay(4000).fadeOut("slow");
 
         setTimeout(function () {
           $('body').css({ 'overflow': 'auto' });
-          // $('html').css({'scroll-behavior':'smooth'});
         }, 4000);
       });
     </script>
