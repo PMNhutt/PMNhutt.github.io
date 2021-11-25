@@ -11,6 +11,9 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="./assets/css/img/gundam.png" />
+  <!-- AOS lib -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
   <title>Phan Minh Nhut-Software Engineer Resume</title>
 </head>
@@ -114,32 +117,33 @@
     </div>
 
     <!-- About -->
-    <h2 class="text-dark fw-light text-uppercase bg-light text-center rounded p-3 mb-4">About Me</h2>
-    <div id="about" class="rounded">
+    <div id="about" data-aos="flip-down" data-aos-duration="1500">
+      <h2 class="text-dark fw-light text-uppercase bg-light text-center rounded p-3 mb-4">About Me</h2>
+    </div>
+
+    <div class="rounded">
 
       <div class="container-lg my3 mb-4">
 
         <div class="row justify-content-center g-3">
           <div class="col-5 col-lg-4 col-xl-3">
-            <div class="card w-100">
-              <div class="card-body">
-                <img src="./assets/css/img/ava2.jpg" class="card-img" alt="My Profile Picture" title="This is my face">
-              </div>
+            <div data-aos="flip-right" data-aos-delay="300" data-aos-duration="1500" class="card w-100">
+                <img src="./assets/css/img/ava2.jpg" class="img-thumbnail" alt="My Profile Picture" title="This is my face">             
             </div>
           </div>
 
           <div class="col-9 col-lg-4">
-            <div class="card">
+            <div data-aos="flip-right" data-aos-delay="500" data-aos-duration="1500" class="card">
               <h4 class="card-header text-uppercase fw-light fs-5 text-center">summary</h4>
               <div class="card-body">
                 <p class="card-text text-start">A funny, energetic and sociable person with <span
-                    class="fw-bold">graphic passionate</span> and more
-                  than <span class="fw-bold">1 year
+                    class="fw-bold text-muted">graphic passionate</span> and more
+                  than <span class="fw-bold text-muted">1 year
                     learning HTML, CSS and basic JavaScript</span>. I've seen lots of incredible websites and I love it,
                   I've
                   spent most of the time
                   learning how to make all that gorgeous eﬀects. So I'm looking forward to doing an
-                  internship <span class="fw-bold">front-end developer</span> position and accomplish more experiences
+                  internship <span class="fw-bold text-muted">front-end developer</span> position and accomplish more experiences
                   in the ﬁeld of
                   software engineer.
                 </p>
@@ -161,10 +165,11 @@
                 </p>
                 <p id="more-1" class="accordion-collapse collapse" aria-labelledby="more-header"
                   data-bs-parent="#more-about">
-                  <span class="fst-italic">
-                    Despite my passion for graphics, I have a weakness that is a bit lacking in creativity, and to make
-                    up
-                    for that weakness I often do....
+                  <span class="text-muted">
+                    In my free time I usually find something to learn, right now I'm learning how to use Bootstrap 5
+                    and after that gonna be ReactJs, Unity,... When I feel bored I'll go out and hangout with my
+                    friends,
+                    watch some movies or just stay at home and play video game while chilling with some lo-fi playlists.
                   </span>
 
                 </p>
@@ -179,7 +184,7 @@
           </div>
 
           <div class="col-7 col-lg-4 col-xl-3">
-            <div class="card">
+            <div data-aos="flip-right" data-aos-delay="700" data-aos-duration="1500" class="card">
               <h4 class="card-header text-uppercase fw-light fs-5 text-center">contact</h4>
               <div class="card-body">
                 <p class="card-text text-start">
@@ -207,35 +212,176 @@
     </div>
 
     <!-- Skills -->
-    <h2 class="text-dark fw-light text-uppercase bg-light text-center rounded p-3 mt-5 mb-4">Skills</h2>
-    <div id="skills">
-      <div class="container-lg my3 text-center">
-        <p class="text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, accusantium
-          necessitatibus dolore, dolor
-          harum sequi vitae magnam praesentium, illo voluptate possimus ipsum temporibus aspernatur eveniet. Officiis
-          molestias excepturi alias hic.</p>
+    <div id="skills" data-aos="flip-down" data-aos-duration="1500">
+      <h2 class="text-dark fw-light text-uppercase bg-light text-center rounded p-3 mt-5 mb-4">Skills</h2>
+    </div>
+
+    <div>
+      <div class="container-lg my3 text-center mb-4">
+        <div class="row justify-content-center g-3">
+
+          <div class="col-9 col-lg-3 col-xl-3">
+            <div data-aos="flip-left" data-aos-duration="1500" data-aos-delay="300" class="card">
+              <h4 class="card-header text-uppercase fw-light fs-5 text-center">soft skills</h4>
+              <div class="card-body">
+                <p class="card-title text-uppercase text-start">soft skills</p>
+                <ul class="card-text text-start text-muted">
+                  <li>Teamwork</li>
+                  <li>Research Information</li>
+                  <li>Presentation</li>
+                  <li>Communication</li>
+                </ul>
+                <p class="card-title text-uppercase text-start">English</p>
+                <ul class="card-text text-start text-muted">
+                  <li>IELTS: ~5.4</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-9 col-lg-4">
+            <div data-aos="flip-left" data-aos-duration="1500" data-aos-delay="500" class="card">
+              <h4 class="card-header text-uppercase fw-light fs-5 text-center">technical skills</h4>
+              <div class="card-body">
+                <p class="card-title text-uppercase text-start">programming languages</p>
+                <ul class="card-text text-start text-muted">
+                  <li>Java <span class="fst-italic">(1 year)</span></li>
+                  <li>HTML 5, CSS 3 <span class="fst-italic">(1 year)</span></li>
+                  <li>JavaScript Basic <span class="fst-italic">(2 months)</span></li>
+                  <li>C# .NET <span class="fst-italic">(4 months)</span></li>
+                </ul>
+                <p class="card-title text-uppercase text-start">frameworks</p>
+                <ul class="card-text text-start text-muted">
+                  <li>Bootstrap 5 <span class="fst-italic">(1 month)</span></li>
+                  <li>ADO .NET <span class="fst-italic">(4 months)</span></li>
+                </ul>
+                <p class="card-title text-uppercase text-start">database</p>
+                <ul class="card-text text-start text-muted">
+                  <li>SQL Sever <span class="fst-italic">(1 year)</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <h4 class="card-header text-uppercase fw-light fs-5 text-center">language</h4>
+              <div class="card-body">
+                <p class="card-title text-uppercase text-start">English</p>
+                <ul class="card-text text-start text-muted">
+                  <li>Ielts: ~5.4</li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
       </div>
     </div>
 
-    <!-- Experiences -->
-    <div id="experiences">
-      <div class="container-lg my3 text-center">
-        <h2 class="text-light fw-light text-uppercase">Experiences</h2>
-        <p class="text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, accusantium
-          necessitatibus dolore, dolor
-          harum sequi vitae magnam praesentium, illo voluptate possimus ipsum temporibus aspernatur eveniet. Officiis
-          molestias excepturi alias hic.</p>
+    <!-- Projects -->
+    <div id="projects" data-aos="flip-down" data-aos-duration="1500">
+      <h2 class="text-dark fw-light text-uppercase bg-light text-center rounded p-3 mt-5 mb-4">Projects</h2>
+    </div>
+    <div>
+      <div class="container-lg my3 text-center mb-4">
+        <div class="row justify-content-center mb-4">
+          <div class="col" style="max-width: 1075px;">
+            <div class="card" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500">
+              <div class="row g-0 bg-transparent">
+                <div class="col-md-7">
+                  <h4 class="card-header text-uppercase fw-light fs-5 text-center">FPT Event Management</h4>
+                  <div class="card-body">
+                    <p class="card-title text-uppercase text-start">(10/2021 - 11/2021)</p>
+                    <ul class="card-text text-start text-muted">
+                      <li><span class="fw-bold">Project Description:</span> A web page for managing event information, follow up hot events, CRUD events.</li>
+                      <li><span class="fw-bold">Team Size:</span> 3</li>
+                      <li><span class="fw-bold">Position:</span> Front-end.</li>
+                      <li><span class="fw-bold">Responsibility:</span> Design UI for the project.</li>
+                      <li><span class="fw-bold">Technology Used:</span>  
+                          <ul>
+                            <li>Front-end: HTML, CSS.</li>
+                            <li>Back-end: Java, SQL Server, Google API, ...</li>
+                          </ul>
+                      </li>
+                      <li><span class="fw-bold">Source Code:</span> <a class="link-secondary" href="https://github.com/PMNhutt/Events-Management-FPTU">https://github.com/PMNhutt/Events-Management-FPTU</a></li>
+                                           
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <img src="./assets/css/img/open menu.png" class="img-thumbnail rounded h-100" alt="FPT Event Management">
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col"style="max-width: 1075px;">
+            <div class="card" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500">
+              <div class="row g-0 bg-transparent">
+                <div class="col-md-7">
+                  <h4 class="card-header text-uppercase fw-light fs-5 text-center">Tea Shop Management</h4>
+                  <div class="card-body">
+                    <p class="card-title text-uppercase text-start">(10/2021 - 11/2021)</p>
+                    <ul class="card-text text-start text-muted">
+                      <li><span class="fw-bold">Project Description:</span> A simple app for selling tea and manage food stock, staﬀ, bills,...</li>
+                      <li><span class="fw-bold">Team Size:</span> 3</li>
+                      <li><span class="fw-bold">Position:</span> Back-end.</li>
+                      <li><span class="fw-bold">Responsibility:</span> Project management,assign work to members.</li>
+                      <li><span class="fw-bold">Technology Used:</span>  
+                          <ul>
+                            <li>Front-end: C# winform.</li>
+                            <li>Back-end: C#, SQL Server, ADO.NET.</li>
+                          </ul>
+                      </li>
+                      <li><span class="fw-bold">Source Code:</span> <a class="link-secondary" href="https://github.com/PMNhutt/Tea-Shop-Management">https://github.com/PMNhutt/Tea-Shop-Management</a></li>
+                                           
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <img src="./assets/css/img/AddBill.PNG" class="img-thumbnail rounded h-100" alt="Tea Shop Management">
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Education -->
-    <div id="education">
-      <div class="container-lg my3 text-center">
-        <h2 class="text-light fw-light text-uppercase">Education</h2>
-        <p class="text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, accusantium
-          necessitatibus dolore, dolor
-          harum sequi vitae magnam praesentium, illo voluptate possimus ipsum temporibus aspernatur eveniet. Officiis
-          molestias excepturi alias hic.</p>
+    <div id="education" data-aos="flip-down" data-aos-duration="1500">
+      <h2 class="text-dark fw-light text-uppercase bg-light text-center rounded p-3 mt-5 mb-4">Education</h2>
+    </div>
+    <div>
+      <div class="container-lg my3 text-center mb-4">
+        <div class="row justify-content-center">
+          <div class="col" style="max-width: 1075px;">
+            <div class="card" data-aos="flip-down" data-aos-delay="300" data-aos-duration="1500">
+              <div class="row g-0 bg-transparent">
+                <div class="col">
+                  <h4 class="card-header text-uppercase fw-light fs-5 text-center">FPT University</h4>
+                  <div class="card-body">
+                    <p class="card-title justify-content-between">(09/2019 - Present) - <span class="fst-italic">Ho Chi Minh City</span></p>
+                    <p class="card-text fw-bold text-muted">Studying Software Engineer</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          
+        </div>
       </div>
     </div>
 
@@ -260,7 +406,7 @@
             <a class="nav-link fill" href="#skills"><i class="bi bi-bar-chart-line-fill"></i> SKILLS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fill" href="#experiences"><i class="bi bi-book-fill"></i> EXPERIENCES</a>
+            <a class="nav-link fill" href="#projects"><i class="bi bi-book-fill"></i> PROJECTS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fill" href="#education">
@@ -273,6 +419,7 @@
 
     <!-- Script -->
     <script src="./assets/js/script.js"></script>
+    <!-- Particle js -->
     <script src="./assets/js/particles.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -281,21 +428,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"></script>
-    <!-- <script>
-      const tooltips = document.querySelectorAll('.tt');
-      tooltips.forEach(t => {
-        new bootstrap.Tooltip(t);
-      })
-      var checkMedia = window.matchMedia("(min-width: 991px)");
-      if (checkMedia.matches) {
-        for (var i = 0; i < tooltips.length; i++) {
-          console.log(i);
-          tooltips[i].classList.remove("tt");
-        }
+    <!-- AOS lib -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
-      }
-    </script> -->
-    <!-- loading icon scren -->
+    <!-- loading icon screen -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(window).on("load", function () {
