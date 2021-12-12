@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/css/img/gundam.png" />
+    <title>TF Is This?</title>
+</head>
+
+<body>
+    <div id="score_corner" class="score p-2 fw-bold fs-3"><span>Score: <span id="score">0</span> </span></div>
+
+    <div id="timer_corner" class="score mt-5 ms-2 fw-bold fs-5">
+        <div class="highScore">HIGH SCORE: 0</div>
+        <p id="timer"></p>
+    </div>
+
+    <video id="endGameBg" src="./assets/css/img/end game.mp4"></video>
+
+    <div id="model"
+        class="position-absolute top-50 start-50 translate-middle text-center align-content-center justify-content-center w-25 p-2 rounded">
+        <div>
+            <h1 id="endText" class="m-0">game over...</h1>
+            <h3 id="endScore" class="pt-1">0 Points</h3>
+            <h3 id="highScore" class="highScore">HIGH SCORE: 0</h3>
+            <h3 id="endTime" class=""></h3>
+            <div id="startGame">
+                <p id="startText" class="m-2 p-2 btn-gradi fs-1">Play now</p>
+            </div>
+            <div id="exit">
+                <p id="exitText" class="m-2 p-2 btn-gradi" onClick="window.location.reload();">Exit</p>
+            </div>
+            <div id="how">
+                <p id="howText" class="m-2 p-2 btn-gradi">How to play?</p>
+            </div>
+            <div id="about">
+                <p id="aboutText" class="m-2 p-2 btn-gradi">about this game</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="start_background"
+        class="position-absolute top-0 end-0 start-0 bottom-0 bg-transparent text-center justify-content-center">
+        <div class="mt-5">
+            <p class="start_title"><span class="t1">Meteoroid</span> <span class="t6">crash!</span></p>
+        </div>
+        <div>
+            <p class="start_subTitle text-light">or something like that...</p>
+        </div>
+        <div class="behind-background"></div>
+
+    </div>
+
+    <div class="position-absolute top-0 end-0 text-center rounded-circle m-2">
+        <div>
+            <i id="pause" class="bi bi-pause-circle fs-3 text-light"></i>
+        </div>
+    </div>
+
+    <div id="model_pause"
+        class="model_pause_body position-absolute top-50 start-50 translate-middle bg-white text-center justify-content-center align-content-center w-25 p-2 rounded">
+        <div>
+            <h1>Paused!</h1>
+            <h3 id="pauseScore" class="">0 points</h3>
+            <div id="continueGame">
+                <p class="m-2 p-2 btn-gradi">Continue</p>
+                <p id="restart" class="m-2 p-2 btn-gradi">Restart</p>
+                <p id="exitt" class="m-2 p-2 btn-gradi" onClick="window.location.reload();">Exit</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="pause_background"
+        class="position-absolute top-0 bottom-0 start-0 end-0 bg-dark text-center justify-content-center align-items-center rounded text-dark">
+
+    </div>
+
+    <div id="model_2" class="position-absolute bottom-0 start-0 text-center rounded-3 ms-3 flex-column">
+        <div class="text-dark d-flex fw-bold fs-4 d-lg-flex d-md-flex d-none p-0">
+            <p class="w-25 text-center m-1">Q</p>
+            <p class="w-25 text-center m-1">W</p>
+            <p class="w-25 text-center m-1">E</p>
+            <p class="w-25 text-center m-1">R</p>
+            <p class="w-25 text-center m-1">1</p>
+            <p class="w-25 text-center m-1">2</p>
+            <p class="w-25 text-center m-1">3</p>
+        </div>
+        <div class="d-flex mb-3">
+            <div class="pe-1"><img id="pyro" class="img-fluid p-2 chosen elem" src="./assets/css/img/element_pyro.png"
+                    alt=""></div>
+            <div class="pe-1"><img id="hydro" class="img-fluid p-2 elem" src="./assets/css/img/element_hydro.png"
+                    alt="">
+            </div>
+            <div class="pe-1"><img id="anemo" class="img-fluid p-2 elem" src="./assets/css/img/element_anemo.png"
+                    alt="">
+            </div>
+            <div class="pe-1"><img id="electro" class="img-fluid p-2 elem" src="./assets/css/img/element_electro.png"
+                    alt=""></div>
+            <div class="pe-1"><img id="dendro" class="img-fluid p-2 elem" src="./assets/css/img/element_dendro.png"
+                    alt="">
+            </div>
+            <div class="pe-1"><img id="cryo" class="img-fluid p-2 elem" src="./assets/css/img/element_cycro.png" alt="">
+            </div>
+            <div class="pe-1"><img id="geo" class="img-fluid p-2 elem" src="./assets/css/img/element_geo.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="model_mess" class="position-absolute end-0 bg-transparent p-1 text-center">
+        <h1 id="message1" class="me-3">caution!</h1>
+        <h4 id="message2" class="me-3"></h4>
+    </div>
+
+    <canvas></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+        integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

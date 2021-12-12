@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'PASTI';
+    src: url('fonts/PASTI-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Squirk';
+    src: url('fonts/Squirk.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+html{
+    overflow: hidden;
+}
+
+body{
+    cursor: url('./img/spacrecraft.png'), auto;
+
+}
+
+a,.btn:hover, i, button,
+.btn-close.text-reset, .btn-gradi:hover, .btn, .btn-gradi{
+  cursor: url('./img/spacrecraft-pointer.png'), auto;
+}
+
+
+.score{
+    position: absolute;
+    z-index: 10;
+    color: white;
+    user-select: none;
+    font-family: 'PASTI';
+}
+
+#score_corner{
+    display: none;
+}
+
+#timer_corner{
+    display: none;
+}
+
+#model{
+    font-family: 'PASTI';
+    z-index: 30;
+    /* background: #f8f9fa; */
+    background: transparent;
+    display: flex;
+}
+
+#endScore{
+    display: none;
+}
+
+#endTime{
+    display: none;
+}
+
+#endText{
+    display: none;
+}
+
+#exit{
+    display: none;
+}
+
+#highScore{
+    display: none;
+}
+
+#start_background{
+    font-family: 'Squirk';
+}
+
+.behind-background{
+    background-image: url('./img/stars-black.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -3;
+    animation: zoomOut 30s linear infinite;
+}
+
+@keyframes zoomOut {
+    to{
+        transform: scale(5);
+    }
+
+}
+
+.start_title{
+    font-size: 80px;
+}
+
+
+
+.start_subTitle{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#model_2{
+    display: none;
+    font-family: 'PASTI';
+
+}
+
+#model_2 img{
+    user-select: none;
+    cursor: url('./img/spacrecraft-pointer.png'), auto;
+
+    width: 80px;
+    background: #130f40;
+    border-radius: 10px;
+    border: 2px solid #ecf0f1;
+}
+
+#model_2 img:hover{
+    background: #535c68;
+}
+
+.chosen{
+    background: #535c68!important;
+
+}
+
+#pause{
+    cursor: url('./img/spacrecraft-pointer.png'), pointer;
+
+    display: none;
+}
+
+#model_pause{
+    display: none;
+    z-index: 30;
+    font-family: 'PASTI';
+}
+
+#pause_background{
+    display: none;
+    opacity: 0.5;
+    z-index: 20;
+}
+
+#message1{
+    font-family: 'PASTI';
+    letter-spacing: 2px;
+    user-select: none;
+    font-weight: bold;
+    background: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: caution 1s linear infinite;
+}
+
+#message2{
+    font-family: 'PASTI';
+    user-select: none;
+    font-weight: bold;
+    background: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: caution2 1s linear infinite;
+}
+
+@keyframes caution {
+    to{
+        background-position: 200% center;
+    }
+}
+
+@keyframes caution2 {
+    to{
+        background-position: -200% center;
+    }
+}
+
+#model_mess{
+    display: none;
+    top: 20%;
+}
+
+
+.btn-gradi {background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%)}
+.btn-gradi {
+   /* width: fit-content; */
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-gradi:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+   cursor: url('./img/spacrecraft-pointer.png'), auto;
+
+ }
+
+
+ .t1{
+    background: linear-gradient( 90deg,  rgba(255,174,0,1) 5%, rgba(255,0,0,1) 30%, rgba(37,249,245,1) 40%, rgba(8,70,218,1) 55%, rgba(96,221,142,1) 60%, rgba(24,138,141,1) 70%, rgba(177,36,224,1) 80%, rgba(124,74,228,0.81) 90%, rgba(255,174,0,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: textclip 5s ease-in-out infinite;
+}
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+.t6{
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,101,133,1) 0%, rgba(255,211,165,1) 80% , rgba(253,101,133,1) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+  animation: textclip 5s ease-in-out infinite;
+}
+
+#endGameBg{
+    display: none;
+    position: fixed;
+    z-index: 30;
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #endGameBg{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #endGameBg{
+        width: auto;
+        height: 100%;
+    }
+}

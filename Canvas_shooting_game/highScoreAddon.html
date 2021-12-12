@@ -1,0 +1,17 @@
+<div class="highScore">HIGH SCORE: 0</div>
+
+<script>
+    const highScoreBoard = document.querySelector('.highScore')
+    let score = 0
+    let highScore = localStorage.getItem('game1stHighScore') || 0
+
+    highScoreBoard.textContent = 'HIGH SCORE: ' + highScore
+
+    function checkHighScore(){
+        if(score > localStorage.getItem('game1stHighScore')){
+            localStorage.setItem('game1stHighScore', score)
+            highScore = score
+            highScoreBoard.textContent = 'HIGH SCORE: ' + highScore
+        }
+    }
+</script>
