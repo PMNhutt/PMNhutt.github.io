@@ -422,7 +422,7 @@ function spawnEnimies() {
             }
             break;
     }
-    console.log('spd ' + spd + ' point ' + val)
+    // console.log('spd ' + spd + ' point ' + val)
     //Math.random() spdue is from 0 to 1
     //random from 10 to 30
     if (spd <= 0.25) {
