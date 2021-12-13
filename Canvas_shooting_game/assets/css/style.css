@@ -122,6 +122,10 @@ a,.btn:hover, i, button,
 
 }
 
+#model_2 p {
+  text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+}
+
 #model_2 img{
     user-select: none;
     cursor: url('./img/spacrecraft-pointer.png'), auto;
