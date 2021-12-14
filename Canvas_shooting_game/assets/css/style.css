@@ -163,6 +163,11 @@ a,.btn:hover, i, button,
     z-index: 20;
 }
 
+#clickToShoot{
+    font-family: 'PASTI';
+    display: none;
+}
+
 #message1{
     font-family: 'PASTI';
     letter-spacing: 2px;

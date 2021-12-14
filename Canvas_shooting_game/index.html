@@ -15,7 +15,8 @@
 
 <body>
 
-    <audio id="background_music" src="./assets/css/img/HinaCC0_011_Fallen_leaves.mp3" loop="loop" preload="true"></audio>
+    <audio id="background_music" src="./assets/css/img/HinaCC0_011_Fallen_leaves.mp3" loop="loop"
+        preload="true"></audio>
     <audio id="warning_sfx" src="./assets/css/img/Alarm.wav"></audio>
     <audio id="rockSmash_sfx" src="./assets/css/img/rock_smash.mp3"></audio>
 
@@ -78,8 +79,14 @@
                 <p id="restart" class="m-2 p-2 btn-gradi">Restart</p>
                 <p id="exitt" class="m-2 p-2 btn-gradi" onClick="window.location.reload();">Exit</p>
             </div>
+                <span class='tt'>
+                    <i id="pButton" class="bi bi-volume-up-fill text-dark fs-3"></i>
+                </span>
         </div>
+    </div>
 
+    <div id="clickToShoot" class="position-absolute top-50 start-50 translate-middle text-light">
+        <h1>Click to shoot!</h1>
     </div>
 
     <div id="pause_background"
