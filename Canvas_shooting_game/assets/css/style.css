@@ -85,7 +85,6 @@ a,.btn:hover, i, button,
 }
 
 .behind-background{
-    background-image: url('./img/stars-black.png');
     background-repeat: no-repeat;
     background-size: cover;
     transition: 0.5s;
@@ -95,12 +94,38 @@ a,.btn:hover, i, button,
     width: 100%;
     height: 100vh;
     z-index: -3;
-    animation: zoomOut 30s linear infinite;
+    animation: change 5s linear infinite;
 }
 
-@keyframes zoomOut {
-    to{
-        transform: scale(5);
+@keyframes change {
+    0%, 100% {
+        background-image: url('./img/Starfield\ 5.png');
+    }
+    50%{
+        background-image: url('./img/Starfield\ 6.png');
+    }
+
+}
+
+#ingame_canvas{
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -3;
+    animation: slider 5s linear infinite;
+}
+
+@keyframes slider {
+    0%, 100% {
+        background-image: url('./img/Starfield\ 1.png');
+    }
+    50%{
+        background-image: url('./img/Starfield\ 2.png');
     }
 
 }
@@ -163,7 +188,7 @@ a,.btn:hover, i, button,
     z-index: 20;
 }
 
-#clickToShoot{
+#clickToShoot,#esc{
     font-family: 'PASTI';
     display: none;
 }
@@ -272,3 +297,66 @@ a,.btn:hover, i, button,
         height: 100%;
     }
 }
+
+/* icon loader */
+.icon-loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: rgb(0,198,197);
+    background: radial-gradient(circle, rgba(0,198,197,1) 0%, rgba(41,99,136,1) 50%, rgba(7,68,96,1) 100%);
+  }
+  
+  .icon-container .gundam{
+    height: 100px;
+    width: 100px;
+  }
+  
+  .poli
+  {
+    fill: transparent!important;
+    stroke-width: 0.5;
+    stroke: #ecf0f1;
+  }
+  
+  .icon-container .icon.gundam polygon,
+  .icon-container .icon.gundam rect,
+  .icon-container .icon.gundam circle
+  {
+    stroke-dasharray: 110;
+    stroke-dashoffset: 110;
+  }
+  
+  .icon-container .icon.gundam polygon,
+  .icon-container .icon.gundam rect,
+  .icon-container .icon.gundam circle{
+    animation-name: animate;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transition: 0.8s;
+  }
+  
+  @keyframes animate{
+    0%{
+      stroke-dashoffset: 110;
+    }
+    50%{
+      stroke-dashoffset: 50;
+    }
+    70%{
+      stroke-dashoffset: 20;
+    }
+    100%{
+      stroke-dashoffset: 0;
+    }
+  }
+  /* end icon loader */
