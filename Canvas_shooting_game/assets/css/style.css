@@ -14,6 +14,9 @@
     font-display: swap;
 }
 
+:root{
+    --afterBg: url(./img/element_pyro.png);
+}
 
 *{
     padding: 0;
@@ -94,7 +97,7 @@ a,.btn:hover, i, button,
     width: 100%;
     height: 100vh;
     z-index: -3;
-    animation: change 5s linear infinite;
+    animation: change 1s linear infinite;
 }
 
 @keyframes change {
@@ -117,7 +120,7 @@ a,.btn:hover, i, button,
     width: 100%;
     height: 100vh;
     z-index: -3;
-    animation: slider 5s linear infinite;
+    animation: slider 2s linear infinite;
 }
 
 @keyframes slider {
@@ -144,7 +147,6 @@ a,.btn:hover, i, button,
 #model_2{
     display: none;
     font-family: 'PASTI';
-
 }
 
 #model_2 p {
@@ -153,22 +155,75 @@ a,.btn:hover, i, button,
 
 #model_2 img{
     user-select: none;
-    cursor: url('./img/spacrecraft-pointer.png'), auto;
+    /* cursor: url('./img/spacrecraft-pointer.png'), auto; */
 
     width: 80px;
     background: #130f40;
     border-radius: 10px;
-    border: 2px solid #ecf0f1;
-}
-
-#model_2 img:hover{
-    background: #535c68;
 }
 
 .chosen{
-    background: #535c68!important;
-
+    /* background: #535c68!important; */
+    /* width: 100px; */
+    overflow: hidden;
+    position: relative;
+    border-radius:10px;
 }
+
+.chosen::before{
+  content : '';
+  position: absolute;
+  width: 150%;
+  height : 150%;
+  right: -25%;
+  top: -25%;
+  /* background-color: #e74c3c; */
+  background: conic-gradient(#e74c3c 10deg, transparent 180deg);
+ animation: rotatingBorder 2s linear infinite;
+ border-radius:10px;
+}
+
+.chosen::after{
+ content: '';
+ position:absolute;
+ top:10px;
+ left:10px;
+ right:10px;
+ bottom:10px;
+ background: #130f40;
+ 
+  /* background: #000; */
+ background-image: var(--afterBg);
+ background-size: cover;
+ border-radius:10px;
+ animation: filterr 2s linear infinite;
+}
+
+@keyframes rotatingBorder
+{
+   0%
+   { transform: rotate(0deg);
+     filter:hue-rotate(0deg) brightness(100%) contrast(100%);
+   }
+   100%
+   {
+    transform: rotate(-360deg);
+    filter:hue-rotate(360deg) brightness(120%) contrast(150%);
+   }
+}
+
+@keyframes filterr
+{
+   0%, 100%
+   { 
+     filter:brightness(100%) contrast(100%);
+   }
+   50%
+   {
+    filter:brightness(120%) contrast(150%);
+   }
+}
+
 
 #pause{
     cursor: url('./img/spacrecraft-pointer.png'), pointer;
