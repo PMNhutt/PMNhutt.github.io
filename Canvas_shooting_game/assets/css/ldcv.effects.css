@@ -1,0 +1,28 @@
+.ldcv > .base > .inner{
+    overflow: hidden!important;
+}
+
+
+.ldcv.ldcv-scale > .base > .inner{
+    transform: scale(0.8);
+    opacity: 0
+}
+  
+.ldcv.ldcv-scale.active > .base > .inner{
+    transform: scale(1);
+    opacity: 1
+}
+  
+.ldcv.ldcv-vortex > .base > .inner{
+    transform: scale(0) rotate(540deg);
+    transition-duration: 0.6s;
+    opacity: 0;
+}
+  
+.ldcv.ldcv-vortex.active > .base > .inner{
+    transform: scale(1) rotate(0);
+    opacity: 1;
+}
+  
+  
+

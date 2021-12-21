@@ -34,7 +34,7 @@ body{
 }
 
 a,.btn:hover, i, button,
-.btn-close.text-reset, .btn-gradi:hover, .btn, .btn-gradi{
+.btn-close.text-reset, .btn-gradi:hover, .btn, .btn-gradi,button.carousel-control-prev:hover,button.carousel-control-next:hover{
   cursor: url('./img/spacrecraft-pointer.png'), auto;
 }
 
@@ -85,6 +85,45 @@ a,.btn:hover, i, button,
 
 #start_background{
     font-family: 'Squirk';
+}
+
+#mobile_prevent{
+  z-index: 8000;
+  font-family: 'PASTI';
+}
+
+#howtoplay{
+  z-index: 8000;
+  font-family: 'PASTI';
+  display: none;
+  /* transition: 500ms; */
+  background: rgba(0,0,0,0.3);
+
+}
+
+#close_howtoplay{
+  z-index: 9999;
+}
+
+#carouselExampleCaptions{
+  transition: 0.5s;
+}
+
+.carousel-indicators button{
+  border-radius: 50%;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.bg_howto_1{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 80%, transparent);
+  border-radius: 5px;
+}
+
+
+button.carousel-control-prev,
+button.carousel-control-next{
+  bottom: -54%;
 }
 
 .behind-background{
