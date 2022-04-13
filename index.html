@@ -1,572 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="shortcut icon" type="image/x-icon" href="./assets/css/img/gundam.png" />
-  <!-- AOS lib -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
-  <title>Phan Minh Nhut-Software Engineer Resume</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/N.png" />
+    <link rel="stylesheet" href="./assets/myStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Comfortaa&family=Fira+Sans:ital,wght@1,900&family=Itim&family=Lobster&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./assets/scroll.css"> -->
+    <title>Phan Minh Nhut-Software Engineer Resume</title>
 </head>
 
 <body>
-  <div class="icon-loader">
-    <div class="icon-container">
-      <div class="icon gundam">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-          <g id="flat">
-            <polygon class="poli" points="52 30 12 30 12 13 19 9 45 9 52 13 52 30" style="fill:#aabece" />
-            <polygon class="poli" points="40 18 24 18 25 3 39 3 40 18" style="fill:#394d5c" />
-            <circle class="poli" cx="32" cy="6" r="3" style="fill:#f4f4e6" />
-            <polygon class="poli" points="12 37 22 39 32 37 42 39 52 37 52 30 12 30 12 37" style="fill:#b5554e" />
-            <rect class="poli" x="12" y="18" width="40" height="12" style="fill:#2d75bb" />
-            <polygon class="poli" points="28 34 23 35 18 34 16 30 30 30 28 34" style="fill:#ffd782" />
-            <polygon class="poli" points="46 34 41 35 36 34 34 30 48 30 46 34" style="fill:#ffd782" />
-            <polygon class="poli" points="22 39 22 53 28 57 29 61 35 61 36 57 42 53 42 39 32 37 22 39"
-              style="fill:#f4f4e6" />
-            <polygon class="poli" points="35 61 29 61 28 57 29 50 32 49 35 50 36 57 35 61" style="fill:#394d5c" />
-            <polygon class="poli"
-              points="36.804 42.98 32 42.02 27.196 42.98 26.804 41.02 32 39.98 37.196 41.02 36.804 42.98"
-              style="fill:#394d5c" />
-            <polygon class="poli"
-              points="36.804 46.98 32 46.02 27.196 46.98 26.804 45.02 32 43.98 37.196 45.02 36.804 46.98"
-              style="fill:#394d5c" />
-            <polygon class="poli" points="22 58 18 59 18 38.111 22 39 22 58" style="fill:#dd3e46" />
-            <polygon class="poli" points="18 59 12 61 12 37 18 38.111 18 59" style="fill:#7d8d9c" />
-            <polygon class="poli" points="37 24 32 26 27 24 28 13 36 13 37 24" style="fill:#f4f4e6" />
-            <polygon class="poli" points="12 55 4 55 4 27 12 23 12 55" style="fill:#aabece" />
-            <rect class="poli" x="8" y="31" width="4" height="4" style="fill:#394d5c" />
-            <rect class="poli" x="8" y="39" width="4" height="4" style="fill:#394d5c" />
-            <rect class="poli" x="8" y="47" width="4" height="4" style="fill:#394d5c" />
-            <polygon class="poli" points="42 58 46 59 46 38.111 42 39 42 58" style="fill:#dd3e46" />
-            <polygon class="poli" points="46 59 52 61 52 37 46 38.111 46 59" style="fill:#7d8d9c" />
-            <polygon class="poli" points="52 55 60 55 60 27 52 23 52 55" style="fill:#aabece" />
-            <rect class="poli" x="52" y="31" width="4" height="4" transform="translate(108 66) rotate(-180)"
-              style="fill:#394d5c" />
-            <rect class="poli" x="52" y="39" width="4" height="4" transform="translate(108 82) rotate(-180)"
-              style="fill:#394d5c" />
-            <rect class="poli" x="52" y="47" width="4" height="4" transform="translate(108 98) rotate(-180)"
-              style="fill:#394d5c" />
-            <polygon class="poli" points="37 24 61 3 36 13 37 24" style="fill:#dd3e46" />
-            <polygon class="poli" points="27 24 3 3 28 13 27 24" style="fill:#dd3e46" />
-            <polygon class="poli" points="27 24 32 26 37 24 36.455 18 32 20 27.545 18 27 24" style="fill:#ffd782" />
-            <circle class="poli" cx="18" cy="24" r="2" style="fill:#f4f4e6" />
-            <circle class="poli" cx="46" cy="24" r="2" style="fill:#f4f4e6" />
-          </g>
-        </svg>
 
-      </div>
-    </div>
-    <div class="loadingio-spinner-double-ring-hl5acls0te8">
-      <div class="ldio-mols4s5saz9 mt-2">
-        <div></div>
-        <div></div>
-        <div>
-          <div></div>
-        </div>
-        <div>
-          <div></div>
-        </div>
-      </div>
-    </div>
+    <!-- NAVIGATION -->
+    <header class="nav">
+        <div id="marker"></div>
+        <a href="#home" class="active">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <!-- <a href="#education" data-scroll-to>Education</a> -->
 
-  </div>
-  <div id="particles-js"></div>
+    </header>
 
-
-  <div class="warpper container-lg">
-    <!-- audio player -->
-    <audio id="audioplayer" loop="loop" preload="true">
-      <source src="./assets/music/ghost duet.mp3" type="audio/mpeg">
-    </audio>
-    <div class="audioplayer">
-      <span class='tt' data-bs-placement="left" title="Chilling Background Music">
-        <i id="pButton" class="bi bi-volume-mute-fill text-light"></i>
-      </span>
-    </div>
-
-    <!-- nav button -->
-    <div class="fixed-top mt-5">
-      <span class='tt' data-bs-placement="top" title="Menu Navigation">
-        <button class="btn btn-nav rounded-circle" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
-            class="bi bi-list fs-3 text-black"></i></button>
-      </span>
-
-    </div>
-
-    <!-- Home -->
-    <div id="home" class="cover-container d-flex align-items-center justify-content-center">
-      <div class="text-center font-monospace">
-        <h1 title="I'm Phan Minh Nhut" class="text-uppercase text-white mx-auto my-auto fw-normal mb-1">I'm Phan Minh
-          Nhut</h1>
-        <div class='text-white mx-auto my-auto fw-lighter'><span id='text'></span>
-          <div class='console-underscore' id='console'>&#95;</div>
-        </div>
-
-        <!-- <a href="https://github.com/PMNhutt"><i class="bi bi-github text-white my-3 fs-3"></i></a> -->
-        <div id="mouse-bounce" class="mouse-bounce">
-          <a href="#about">
-            <i class="bi bi-mouse2-fill text-white my-3 fs-4 mouse-bounce"></i>
-          </a>
-        </div>
-        <div id="mouse-bounce-phone" class="mouse-bounce-phone">
-          <a href="#about">
-            <i class="bi bi-arrow-down-circle-fill text-white my-3 fs-4 mouse-bounce-phone"></i>
-          </a>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- About -->
-    <div id="about" data-aos="flip-down" data-aos-duration="1500">
-      <h2 class="text-dark fw-light text-uppercase bg-light text-center rounded p-3 mb-4">About Me</h2>
-    </div>
-
-    <div class="rounded">
-
-      <div class="container-lg my3 mb-4">
-
-        <div class="row justify-content-center g-3">
-          <div class="col-9 col-lg-4 col-xl-3">
-            <div data-aos="flip-right" data-aos-delay="300" data-aos-duration="1500" class="card w-100">
-              <img src="./assets/css/img/ava3.jpg" class="img-thumbnail" alt="My Profile Picture"
-                title="This is my face">
+    <!-- HOME -->
+    <div id="home" class="home padding">
+        <div class="home-container">
+            <div class="home-intro">
+                <h1 data-scroll data-scroll-speed="1">Hi. I'm Phan Minh Nhut</h1>
+                <p data-scroll data-scroll-speed="2">Front End Developer</p>
             </div>
-          </div>
-
-          <div class="col-9 col-lg-4">
-            <div data-aos="flip-right" data-aos-delay="500" data-aos-duration="1500" class="card">
-              <h4 class="card-header text-uppercase fw-light fs-5 text-center">summary</h4>
-              <div class="card-body">
-                <p class="card-text text-start">A funny, energetic and sociable person with <span
-                    class="fw-bold text-muted">graphic passionate</span> and more
-                  than <span class="fw-bold text-muted">1 year
-                    learning HTML, CSS and basic JavaScript</span>. I've seen lots of incredible websites and I love it,
-                  I've
-                  spent most of the time
-                  learning how to make all that gorgeous eﬀects. So I'm looking forward to doing an
-                  internship <span class="fw-bold text-muted">front-end developer</span> position and accomplish more
-                  experiences
-                  in the ﬁeld of
-                  software engineer.
-                </p>
-                <p class="card-text text-start">
-                  <!-- Despite my passion for graphics, I have a weakness that is a bit lacking in creativity, and to make up
-                  for that weakness I often do. -->
-                  I like to <span class="fst-italic">communicate and listen</span> to others, I think it's the best way
-                  to receive information
-                  and show respect to your partner. I also prefer <span class="fst-italic">working as a team</span>
-                  because I love sharing things and
-                  the productivity will much more faster. Beside I can ask for help if I have some troubles than just to
-                  suffer it alone.
-                </p>
-                <p class="card-text accordion accordion-flush" id="more-about">
-                <p class="accordion-item border-0">
-                <p class="accordion-header" id="more-header">
-                  <a class="btn accordion-button collapsed p-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#more-1" aria-controls="#more-1" aria-expanded="false">More about me</a>
-                </p>
-                <p id="more-1" class="accordion-collapse collapse" aria-labelledby="more-header"
-                  data-bs-parent="#more-about">
-                  <span class="text-muted">
-                    In my free time I usually find something to learn, right now I'm learning how to use Bootstrap 5
-                    and after that gonna be ReactJs, Unity,... When I feel bored I'll go out and hangout with my
-                    friends,
-                    watch some movies or just stay at home and play video game while chilling with some lo-fi playlists.
-                  </span>
-
-                </p>
-
-                </p>
-
-                </p>
-                <a href="./assets/Phan Minh Nhut - Software Engineer.pdf" class="btn btn-grad"><i
-                    class="bi bi-download me-1"></i>My CV</a>
-              </div>
+            <div class="home-right">
+                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_meymdphi.json"
+                    background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay>
+                </lottie-player>
             </div>
-          </div>
-
-          <div class="col-9 col-lg-4 col-xl-3">
-            <div data-aos="flip-right" data-aos-delay="700" data-aos-duration="1500" class="card">
-              <h4 class="card-header text-uppercase fw-light fs-5 text-center">contact</h4>
-              <div class="card-body">
-                <p class="card-text text-start">
-                  <i class="bi bi-geo-alt-fill me-1"></i>Dong Hung Thuan Ward, District 12, Ho Chi Minh City.
-                </p>
-                <p class="card-text text-start">
-                  <i class="bi bi-calendar-fill me-0"></i> 11 Apirl, 2001
-                </p>
-                <p class="card-text text-start">
-                  <i class="bi bi-phone-fill me-2"></i>0968 797 104
-                </p>
-                <p class="card-text text-start">
-                  <i class="bi bi-envelope-fill me-2"></i>phanminhnhut.114@gmail.com
-                </p>
-                <p class="card-text text-start">
-                  <i class="bi bi-github me-2"></i><a href="https://github.com/PMNhutt"
-                    class="link-secondary">https://github.com/PMNhutt</a>
-                </p>
-
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Skills -->
-    <div id="skills" data-aos="flip-down" data-aos-duration="1500">
-      <h2 class="text-dark fw-light text-uppercase bg-light text-center rounded p-3 mt-5 mb-4">Skills</h2>
-    </div>
-
-    <div>
-      <div class="container-lg my3 text-center mb-4">
-        <div class="row justify-content-center g-3">
-
-          <div class="col-9 col-lg-3 col-xl-3">
-            <div data-aos="flip-left" data-aos-duration="1500" data-aos-delay="300" class="card">
-              <h4 class="card-header text-uppercase fw-light fs-5 text-center">soft skills</h4>
-              <div class="card-body">
-                <p class="card-title text-uppercase text-start">soft skills</p>
-                <ul class="card-text text-start text-muted">
-                  <li>Teamwork</li>
-                  <li>Research Information</li>
-                  <li>Presentation</li>
-                  <li>Communication</li>
-                </ul>
-                <p class="card-title text-uppercase text-start">English</p>
-                <ul class="card-text text-start text-muted">
-                  <li>IELTS: 5.5</li>
-                </ul>
-              </div>
+        <div class="home-button">
+            <div class="around-text-home">
+                <h5>Check-Out- My- Projects- </h5>
             </div>
-          </div>
-
-          <div class="col-9 col-lg-4">
-            <div data-aos="flip-left" data-aos-duration="1500" data-aos-delay="500" class="card">
-              <h4 class="card-header text-uppercase fw-light fs-5 text-center">technical skills</h4>
-              <div class="card-body">
-                <p class="card-title text-uppercase text-start">programming languages</p>
-                <ul class="card-text text-start text-muted">
-                  <li>Java <span class="fst-italic">(1 year)</span></li>
-                  <li>HTML 5, CSS 3 <span class="fst-italic">(1 year)</span></li>
-                  <li>JavaScript Basic <span class="fst-italic">(2 months)</span></li>
-                  <li>C# .NET <span class="fst-italic">(4 months)</span></li>
-                </ul>
-                <p class="card-title text-uppercase text-start">frameworks</p>
-                <ul class="card-text text-start text-muted">
-                  <li>React JS <span class="fst-italic">(2 months)</span></li>
-                  <li>Bootstrap 5 <span class="fst-italic">(1 month)</span></li>
-                  <li>ADO .NET <span class="fst-italic">(4 months)</span></li>
-                </ul>
-                <p class="card-title text-uppercase text-start">database</p>
-                <ul class="card-text text-start text-muted">
-                  <li>SQL Sever <span class="fst-italic">(1 year)</span></li>
-                </ul>
-              </div>
+            <div class="project-navigation">
+                <a href="#projects" data-scroll-to>
+                    <ion-icon name="arrow-down-outline"></ion-icon>
+                </a>
             </div>
-          </div>
-
-          <!-- <div class="col-6 col-lg-4 col-xl-3">
-            <div class="card">
-              <h4 class="card-header text-uppercase fw-light fs-5 text-center">language</h4>
-              <div class="card-body">
-                <p class="card-title text-uppercase text-start">English</p>
-                <ul class="card-text text-start text-muted">
-                  <li>Ielts: ~5.4</li>
-                </ul>
-              </div>
-            </div>
-          </div> -->
-
         </div>
-      </div>
+        <div class="background">
+            HOME
+        </div>
+        <!-- <div class="background-2">
+                HOME
+            </div>
+            <div class="background-3">
+                HOME
+            </div> -->
     </div>
 
-    <!-- Projects -->
-    <div id="projects" data-aos="flip-down" data-aos-duration="1500">
-      <h2 class="text-dark fw-light text-uppercase bg-light text-center rounded p-3 mt-5 mb-4">Projects</h2>
-    </div>
-    <div>
-      <div class="container-lg my3 text-center mb-4">
-        <div class="row justify-content-center mb-4">
-          <div class="col" style="max-width: 1075px;">
-            <div class="card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
-              <div class="row g-0 bg-transparent">
-                <div class="col-md-7">
-                  <h4 class="card-header text-uppercase fw-light fs-5 text-center">
-                    <image style="width: 60px" src="./assets/css/img/reactjs.png" />Notflex (unfinished)
-                  </h4>
-                  <div class="card-body">
-                    <p class="card-title text-start">(2022 - Present) - React App</p>
-                    <ul class="card-text text-start text-muted">
-                      <li><span class="fw-bold">Project Description:</span> Netflix clone to practice with
-                        React after a few months learning.</li>
-                      <li><span class="fw-bold">Current Features:</span>
-                        <ul>
-                          <li>Auto display movie trailer on background banner</li>
-                          <li>Display movie infomations and trailer on hover</li>
-                          <li>Filter movies genre</li>
-                          <li>...</li>
-                        </ul>
-                      </li>
-                      <li><span class="fw-bold">Technology Used:</span>
-                        <ul>
-                          <li>Front-end: ReactJS, CSS</li>
-                          <li>Data: TMDB API</li>
-                        </ul>
-                      </li>
-                      <li><span class="fw-bold">Source Code:</span> <a class="link-secondary"
-                          href="https://github.com/PMNhutt/NOTFLEX">https://github.com/PMNhutt/NOTFLEX</a>
-                      </li>
+    <!-- PROJECTS -->
+    <section id="projects" class="projects padding">
+        <div class="project-container">
+            <div class="project-1">
+                <div class="project-info">
+                    <h2>NOTFLEX <span class="text-light">(2022 - Present)</span></h2>
+                    <ul class="details">
+                        <li class="title"><span class="text-bold">Project Description:</span>
+                            <ul class="text-body-light">
+                                <li>Netflix clone using React JS.</li>
+                            </ul>
+                        </li>
+                        <li class="title"><span class="text-bold">Current Features:</span>
+                            <ul class="text-body-light">
+                                <li>Auto display movie trailer on background banner</li>
+                                <li>Display movie infomations and trailer on hover</li>
+                                <li>Filter movies genre</li>
+                                <li>...</li>
+                            </ul>
+                        </li>
+                        <li class="title"><span class="text-bold">Technology Used:</span>
+                            <ul class="text-body-light">
+                                <li>Front-end: ReactJS, CSS</li>
+                                <li>Data: TMDB API</li>
+                            </ul>
+                        </li>
+                        <li class="title"> <span class="text-bold">Source Code:</span> <a class="link-secondary"
+                                target="_blank"
+                                href="https://github.com/PMNhutt/NOTFLEX">https://github.com/PMNhutt/NOTFLEX</a>
+                        </li>
 
                     </ul>
-                    <div class="text-start">
-                      <a href="https://notflex.vercel.app" class="btn btn-grad"><i
-                          class="bi bi-arrow-right-circle-fill"></i> Check the app!</a>
+                </div>
+                <a href="https://notflex.vercel.app" target="_blank">
+                    <div class="project-screenshot" style="background-image: url(./assets/img/Notflex.PNG)">
+                        <div class="visit-project">
+                            <ion-icon name="eye"></ion-icon>
+                            <h5>REVIEW</h5>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <img src="./assets/css/img/Notflex.PNG" class="img-thumbnail rounded h-100" alt="Notflex">
-                </div>
-
-              </div>
+                </a>
 
             </div>
-          </div>
 
-
-        </div>
-
-        <div class="row justify-content-center mb-4">
-          <div class="col" style="max-width: 1075px;">
-            <div class="card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
-              <div class="row g-0 bg-transparent">
-                <div class="col-md-7">
-                  <h4 class="card-header text-uppercase fw-light fs-5 text-center">FPT Event Management</h4>
-                  <div class="card-body">
-                    <p class="card-title text-start">(10/2021 - 11/2021) - Java Web</p>
-                    <ul class="card-text text-start text-muted">
-                      <li><span class="fw-bold">Project Description:</span> A web page for managing event information,
-                        follow up hot events, CRUD events.</li>
-                      <li><span class="fw-bold">Team Size:</span> 3</li>
-                      <li><span class="fw-bold">Position:</span> Front-end.</li>
-                      <li><span class="fw-bold">Responsibility:</span> Design UI for the project.</li>
-                      <li><span class="fw-bold">Technology Used:</span>
-                        <ul>
-                          <li>Front-end: HTML, CSS.</li>
-                          <li>Back-end: Java, SQL Server, Google API, ...</li>
-                        </ul>
-                      </li>
-                      <li><span class="fw-bold">Source Code:</span> <a class="link-secondary"
-                          href="https://github.com/PMNhutt/Events-Management-FPTU">https://github.com/PMNhutt/Events-Management-FPTU</a>
-                      </li>
-
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <img src="./assets/css/img/open menu.png" class="img-thumbnail rounded h-100"
-                    alt="FPT Event Management">
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-
-
-        </div>
-
-        <div class="row justify-content-center mb-4">
-          <div class="col" style="max-width: 1075px;">
-            <div class="card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
-              <div class="row g-0 bg-transparent">
-                <div class="col-md-7">
-                  <h4 class="card-header text-uppercase fw-light fs-5 text-center">Tea Shop Management</h4>
-                  <div class="card-body">
-                    <p class="card-title text-start">(10/2021 - 11/2021) - .NET Winform Application</p>
-                    <ul class="card-text text-start text-muted">
-                      <li><span class="fw-bold">Project Description:</span> A simple app for selling tea and manage food
-                        stock, staﬀ, bills,...</li>
-                      <li><span class="fw-bold">Team Size:</span> 3</li>
-                      <li><span class="fw-bold">Position:</span> Back-end.</li>
-                      <li><span class="fw-bold">Responsibility:</span> Project management,assign work to members.</li>
-                      <li><span class="fw-bold">Technology Used:</span>
-                        <ul>
-                          <li>Front-end: C# winform.</li>
-                          <li>Back-end: C#, SQL Server, ADO.NET.</li>
-                        </ul>
-                      </li>
-                      <li><span class="fw-bold">Source Code:</span> <a class="link-secondary"
-                          href="https://github.com/PMNhutt/Tea-Shop-Management">https://github.com/PMNhutt/Tea-Shop-Management</a>
-                      </li>
+            <div class="project-2">
+                <div class="project-info">
+                    <h2>FIGIMAN <span class="text-light">(2022 - Present)</span></h2>
+                    <ul class="details">
+                        <li class="title"><span class="text-bold">Project Description:</span>
+                            <ul class="text-body-light">
+                                <li>E-commerce figure shop website.</li>
+                            </ul>
+                        </li>
+                        <li class="title"><span class="text-bold">Current Pages:</span>
+                            <ul class="text-body-light">
+                                <li>Landing page</li>
+                                <li>Product page</li>
+                                <li>News Page</li>
+                                <li>Check out page</li>
+                                <li>Login page</li>
+                                <li>...</li>
+                            </ul>
+                        </li>
+                        <li class="title"><span class="text-bold">Technology Used:</span>
+                            <ul class="text-body-light">
+                                <li>Front-end: HTML, CSS, JavaScript</li>
+                                <li>Data: Fake local json data</li>
+                            </ul>
+                        </li>
+                        <li class="title"> <span class="text-bold">Source Code:</span>
+                            <p class="link-secondary" target="_blank" href="">...</p>
+                        </li>
 
                     </ul>
-                  </div>
                 </div>
-                <div class="col-md-5">
-                  <img src="./assets/css/img/AddBill.PNG" class="img-thumbnail rounded h-100" alt="Tea Shop Management">
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col" style="max-width: 1075px;">
-            <div class="card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
-              <div class="row g-0 bg-transparent">
-                <div class="col-md-7">
-                  <h4 class="card-header text-uppercase fw-light fs-5 text-center">
-                    <image style="width: 30px; margin-right: 1vw" src="./assets/css/img/js.png" />Meteoroid Crash
-                  </h4>
-                  <div class="card-body">
-                    <p class="card-title text-start">(12/2021 - Now) - Canvas HTML5 Webgame</p>
-                    <ul class="card-text text-start text-muted">
-                      <li><span class="fw-bold">Project Description:</span> My first simple game to practice with
-                        JavaScript and HTML5, objective of the game is to protect the Earth from falling meteoroids by
-                        shooting it, if the meteoroid pass the cloud it will crash the ground and destroy everything!
-                      </li>
-                      <li><span class="fw-bold">Technology Used:</span>
-                        <ul>
-                          <li>Front-end: Canvas, HTML5, Bootstrap 5</li>
-                          <li>Back-end: JavaScript</li>
-                        </ul>
-                      </li>
-
-                    </ul>
-                    <div class="text-start">
-                      <a href="https://pmnhutt.github.io/Canvas_shooting_game/" class="btn btn-grad"><i
-                          class="bi bi-play me-1"></i>Play Demo</a>
+                <a href="">
+                    <div class="project-screenshot" style="background-image: url(./assets/img/Figiman.PNG)">
+                        <div class="visit-project">
+                            <ion-icon name="eye-off"></ion-icon>
+                            <h5>IN PROGRESS</h5>
+                        </div>
                     </div>
-
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <img src="./assets/css/img/Game.PNG" class="img-thumbnail rounded h-100" alt="Game">
-                </div>
-
-              </div>
-
+                </a>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Education -->
-    <div id="education" data-aos="flip-down" data-aos-duration="1500">
-      <h2 class="text-dark fw-light text-uppercase bg-light text-center rounded p-3 mt-5 mb-4">Education</h2>
-    </div>
-    <div>
-      <div class="container-lg my3 text-center mb-4">
-        <div class="row justify-content-center">
-          <div class="col" style="max-width: 1075px;">
-            <div class="card" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1500">
-              <div class="row g-0 bg-transparent">
-                <div class="col">
-                  <h4 class="card-header text-uppercase fw-light fs-5 text-center">FPT University</h4>
-                  <div class="card-body">
-                    <p class="card-title justify-content-between">(09/2019 - Present) - Ho Chi Minh City</p>
-                    <p class="card-text fw-bold text-muted">Studying Software Engineer</p>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-
 
         </div>
-      </div>
-    </div>
 
-    <!-- Off Canvas -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <a href="#home" title="Navigate to home"><img class="offcan-img img-fluid" src="./assets/css/img/gundam.png"
-            alt="Icon"></a>
-        <h5 id="offcanvasRightLabel">NHUTPM</h5>
+        <div class="background">
+            PROJECTS
+        </div>
+        <!-- <div class="background-2">
+                PROJECTS
+            </div>
+            <div class="background-3">
+                PROJECTS
+            </div> -->
+        <!-- <div class="background-4">
+                PROJECTS
+            </div> -->
+        <div class="background-5">
+            PROJECTS
+        </div>
 
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body text-light">
-        <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-auto">
-          <li class="nav-item">
-            <a class="nav-link fill" aria-current="page" href="#home"><i class="bi bi-house-fill"></i> HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fill" href="#about"><i class="bi bi-person-fill"></i> ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fill" href="#skills"><i class="bi bi-bar-chart-line-fill"></i> SKILLS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fill" href="#projects"><i class="bi bi-book-fill"></i> PROJECTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fill" href="#education">
-              <ion-icon name="school"></ion-icon> EDUCATION
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </section>
 
+    <!-- ABOUT -->
+    <section id="about" class="about padding">
+
+        <div class="about-container">
+
+            <div class="about-img">
+                <div class="circle">
+                    <div class="img"></div>
+                    <div class="around-text">
+                        <h5>-Phan Minh Nhut - Front End Developer </h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="about-contact contact-2" data-scroll data-scroll-speed="1">
+                    <h3 class="text-bold">Contact</h3>
+                    <ul class="contact-body">
+                        <li>
+                            <ion-icon name="location"></ion-icon>
+                            <span class="text-body-light"> Dong Hung Thuan Ward, District 12, Ho Chi Minh City.</span>
+                        </li>
+                        <li>
+                            <ion-icon name="calendar-clear"></ion-icon>
+                            <span class="text-body-light">11 Apirl, 2001</span>
+                        </li>
+                        <li>
+                            <ion-icon name="phone-portrait"></ion-icon>
+                            <span class="text-body-light">0968 797 104</span>
+                        </li>
+                        <li>
+                            <ion-icon name="mail"></ion-icon>
+                            <span class="text-body-light">phanminhnhut.114@gmail.com</span>
+                        </li>
+                        <li>
+                            <ion-icon name="logo-github"></ion-icon>
+                            <span class="text-body-light">
+                                <a href="https://github.com/PMNhutt" target="_blank"
+                                    class="link-secondary">https://github.com/PMNhutt</a>
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div> -->
+
+            <div class="about-info span-2">
+                <h3 class="text-bold">Summary</h3>
+                <div>
+                    <p class="text-body-light">A funny, energetic and sociable person
+                        with <span class="fw-bold text-muted">graphic
+                            passionate</span> and more
+                        than <span class="fw-bold text-muted">2 year
+                            learning HTML, CSS and basic JavaScript</span>. I've seen lots of incredible
+                        websites
+                        and I
+                        love it,
+                        I've
+                        spent most of the time
+                        learning how to make all that gorgeous eﬀects. So I'm looking forward to doing an
+                        internship <span class="fw-bold text-muted">front-end developer</span> position and
+                        accomplish
+                        more
+                        experiences
+                        in the ﬁeld of
+                        software engineer.
+                    </p>
+                    <p class="text-body-light">
+                        <!-- Despite my passion for graphics, I have a weakness that is a bit lacking in creativity, and to make up
+                        for that weakness I often do. -->
+                        I like to <span class="fst-italic text-muted">communicate and listen</span> to others, I
+                        think
+                        it's the
+                        best way
+                        to receive information
+                        and show respect to your partner. I also prefer <span class="fst-italic text-muted">working
+                            as a
+                            team</span>
+                        because I love sharing things and
+                        the productivity will much more faster. Beside I can ask for help if I have some
+                        troubles
+                        than
+                        just to
+                        suffer it alone.
+                    </p>
+
+                </div>
+                <a href="./assets/Phan Minh Nhut - Software Engineer.pdf" target="_blank" class="download-btn">
+                    <ion-icon name="download-outline"></ion-icon>My CV
+                </a>
+            </div>
+
+            <div class="about-contact contact-1">
+                <h3 class="text-bold">Contact</h3>
+                <ul class="contact-body">
+                    <li>
+                        <ion-icon name="location"></ion-icon>
+                        <span class="text-body-light"> Dong Hung Thuan Ward, District 12, Ho Chi Minh
+                            City.</span>
+                    </li>
+                    <li>
+                        <ion-icon name="calendar-clear"></ion-icon>
+                        <span class="text-body-light">11 Apirl, 2001</span>
+                    </li>
+                    <li>
+                        <ion-icon name="phone-portrait"></ion-icon>
+                        <span class="text-body-light">0968 797 104</span>
+                    </li>
+                    <li>
+                        <ion-icon name="mail"></ion-icon>
+                        <span class="text-body-light">phanminhnhut.114@gmail.com</span>
+                    </li>
+                    <li>
+                        <ion-icon name="logo-github"></ion-icon>
+                        <span class="text-body-light">
+                            <a href="https://github.com/PMNhutt" target="_blank"
+                                class="link-secondary">https://github.com/PMNhutt</a>
+                        </span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="background">
+                ABOUT
+            </div>
+            <!-- <div class="background-2">
+                    ABOUT
+                </div>
+                <div class="background-3">
+                    ABOUT
+                </div> -->
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills padding" id="skills">
+        <div class="skills-container">
+            <div class="container-left">
+                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_0ttj9f1u.json"
+                    background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay>
+                </lottie-player>
+            </div>
+
+            <div class="container-right">
+                <div class="technical-skills">
+                    <h3 class="text-bold">Web Development</h3>
+                    <ul class="text-body-light">
+                        <li>HTML 5, CSS 3 <span class="text-muted text-small">(2 years)</span></li>
+                        <li>JavaScript <span class="text-muted text-small">(2 years)</span></li>
+                        <li>Java <span class="text-muted text-small">(2 years)</span></li>
+                        <li>C# .NET <span class="text-muted text-small">(3 months)</span></li>
+                    </ul>
+
+                    <h3 class="text-bold">Front End Frameworks</h3>
+                    <ul class="text-body-light">
+                        <li>React JS <span class="text-muted text-small">(5 months)</span></li>
+                        <li>Bootstrap 5 <span class="text-muted text-small">(1 month)</span></li>
+                    </ul>
+                </div>
+
+                <div class="soft-skills">
+                    <h3 class="text-bold">Soft Skills</h3>
+
+                    <ul class="text-body-light">
+                        <li>Teamwork</li>
+                        <li>Research Information</li>
+                        <li>Presentation</li>
+                        <li>Communication</li>
+                    </ul>
+                    <h4 class="card-title text-uppercase text-start">English</h4>
+                    <ul class="text-body-light">
+                        <li>IELTS: 5.5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="background">
+            SKILLS
+        </div>
+        <!-- <div class="background-2">
+                SKILLS
+            </div>
+            <div class="background-3">
+                SKILLS
+            </div> -->
+
+    </section>
+
+
+    <!-- EDUCATION -->
+    <!-- <section data-scroll data-scroll-section id="education" class="education">
+
+        </section> -->
     <!-- Script -->
-    <script src="./assets/js/script.js"></script>
-    <!-- Particle js -->
-    <script src="./assets/js/particles.js"></script>
-    <script src="./assets/js/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-      crossorigin="anonymous"></script>
-    <!-- AOS lib -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="./assets/myScript.js"></script>
 
-    <!-- loading icon screen -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $(window).on("load", function () {
-        $(window).scrollTop(0);
-        $(".icon-loader").fadeIn(2000).delay(4000).fadeOut("slow");
-
-        setTimeout(function () {
-          $('body').css({ 'overflow': 'auto' });
-        }, 4000);
-      });
-    </script>
-
-    <!-- End Script -->
-
-    <!-- icon ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-  </div>
+    <script>
+        // const scroll = new LocomotiveScroll({
+        //     el: document.querySelector('[data-scroll-container]'),
+        //     smooth: true,
+        //     repeat: true,
+        // });
+
+        // const body = document.querySelector('body');
+        // let lastScroll = 0;
+
+        // const section = document.querySelectorAll('section')
+        // const links = document.querySelectorAll('.nav a')
+        // const navLink = document.querySelector('.nav')
+
+
+        // scroll.on('scroll', (instance) => {
+        //     const currentScroll = instance.scroll.y;
+
+        //     if (currentScroll <= 0) {
+        //         body.classList.remove('scroll-up')
+        //     }
+
+        //     if (currentScroll > 0) {
+        //         body.classList.remove('scroll-up')
+        //         body.classList.add('scroll-down')
+        //     }
+
+        //     if (currentScroll < lastScroll) {
+        //         body.classList.remove('scroll-down')
+        //         body.classList.add('scroll-up')
+        //     }
+
+        //     lastScroll = currentScroll;
+
+        //     //scroll trigger nav active
+        //     section.forEach(section => {
+        //         let top = instance.scroll.y;
+        //         let offset = section.offsetTop - 150;
+        //         let height = section.offsetHeight;
+        //         let id = section.getAttribute('id');
+
+        //         if (top >= offset && top < offset + height) {
+        //             links.forEach(link => {
+
+        //                 link.classList.remove('active');
+        //                 document.querySelector('.nav a[href*=' + id + ']').classList.add('active')
+        //             })
+        //         }
+        //     })
+        // });
+
+        //smooth -scrollbar
+
+    </script>
 </body>
 
 </html>
