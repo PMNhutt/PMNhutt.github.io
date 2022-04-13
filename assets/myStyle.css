@@ -364,11 +364,8 @@ body {
 }
 
 .projects {
-    display: flex;
     height: 100%;
     width: 100%;
-    /* align-items: center; */
-
     position: relative;
     color: var(--text-color);
 }
@@ -469,13 +466,17 @@ body {
     letter-spacing: 1px;
 }
 
+.project-container {
+    padding-top: 10vw;
+}
+
 
 .project-container .project-1 {
     /* height: 50vh; */
     display: flex;
     align-items: center;
     width: 100%;
-    margin-top: 10vw;
+    /* margin-top: 10vw; */
     position: relative;
 }
 
@@ -783,19 +784,88 @@ body {
     }
 
     .about-img .around-text span {
-        transform-origin: 0 90px;
+        /* text-transform: uppercase; */
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        font-size: 3vw;
+        transform-origin: 0px 113px;
+    }
+
+    .about-img .around-text {
+        width: 30vw;
+        height: 30vw;
     }
 
     .about-container {
-        margin-top: 10vw;
+        margin-top: 20vw;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-template-areas: 
-        'one three'
-        'two two';
+        grid-template-areas:
+            'one three'
+            'two two';
         height: 100vh;
     }
+
+    .padding {
+        padding: 20px;
+    }
+
+    .home {
+        justify-content: center;
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        position: relative;
+    }
+
+    .home-container {
+        margin-top: 10%;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .home-intro {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .home-intro h1 {
+        font-size: 7vw;
+    }
+
+    .home-intro p {
+        font-size: 3vw;
+        margin-top: 20px;
+    }
+
+
+    .project-container .project-1 {
+        margin-top: 10vw;
+    }
+
+
+    .circle {
+        left: 30%;
+        width: 18vw;
+        height: 25vw;
+    }
+
+    .about-img .img {
+        width: 25vw;
+        height: 25vw;
+    }
+
+
 
 }
 
