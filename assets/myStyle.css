@@ -839,7 +839,7 @@ body {
         text-transform: uppercase;
         display: inline-block;
         position: absolute;
-        transform-origin: 0 43px;
+        transform-origin: 0  2.8762541806020065vw;
     }
 
     .project-1 .project-info,
@@ -857,7 +857,8 @@ body {
         position: absolute;
         left: 50%;
         font-size: 3vw;
-        transform-origin: 0px 113px;
+        /* transform-origin: 0px 113px; */
+        transform-origin: 0px 7.558528428093646vw;
     }
 
     .about-img .around-text {
@@ -1031,7 +1032,7 @@ body {
         text-transform: uppercase;
         display: inline-block;
         position: absolute;
-        transform-origin: 0 35px;
+        transform-origin: 0 2.3411371237458196vw;
     }
 
     .project-navigation {
@@ -1050,7 +1051,7 @@ body {
     .about-img .around-text span {
         left: 50%;
         font-size: 3.5vw;
-        transform-origin: 0px 77px;
+        transform-origin: 0px 5.150501672240803vw;
     }
 
     .circle {
